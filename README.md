@@ -1,2 +1,2 @@
 # replygen
-GPT-4o powered email reply generator with tone selection. 14:31
+GPT-4o powered email reply generator with tone selection
