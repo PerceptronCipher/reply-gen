@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+
 import "./App.css";
 import Navbar from "./Pages/Navbar";
 import Main from "./Pages/Main";
