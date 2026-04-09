@@ -1,0 +1,218 @@
+/* --- SECTION & CONTAINER --- */
+.paste-section {
+  padding: 80px 24px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+}
+
+.paste-card {
+  width: 100%;
+  max-width: 850px;
+  background: #111111;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 28px;
+  padding: 40px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+}
+
+.card-title {
+  color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 35px;
+  letter-spacing: -0.5px;
+}
+
+/* --- INPUT AREA --- */
+.input-wrapper {
+  background: #f4f4f4; /* High contrast for the input area per branding */
+  border-radius: 20px;
+  padding: 24px;
+  margin-bottom: 35px;
+}
+
+.email-textarea {
+  width: 100%;
+  height: 200px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.05rem;
+  color: #1a1a1a;
+  resize: none;
+  font-family: inherit;
+  line-height: 1.5;
+}
+
+/* --- OPTIONS & DROPDOWNS --- */
+.options-label {
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.dropdowns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+.select-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.select-group label {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.75rem;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* DROPDOWN CUSTOM STYLING */
+.select-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.pill-select {
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 12px 40px 12px 20px; /* Space on right for icon */
+  border-radius: 100px;
+  cursor: pointer;
+  text-align: left;
+  font-size: 0.9rem;
+  font-weight: 500;
+  appearance: none; /* Removes default browser arrow */
+  transition: all 0.2s ease;
+}
+
+.pill-select:hover {
+  border-color: #8738DB;
+}
+
+.pill-select:focus {
+  outline: none;
+  border-color: #8738DB;
+  box-shadow: 0 0 0 2px rgba(135, 56, 219, 0.2);
+}
+
+.select-icon {
+  position: absolute;
+  right: 15px;
+  color: rgba(255, 255, 255, 0.5);
+  pointer-events: none; /* Clicking icon opens select */
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.select-wrapper:focus-within .select-icon {
+  color: #8738DB;
+  transform: rotate(180deg);
+}
+
+/* --- ACTION BUTTON --- */
+.generate-btn {
+  width: 100%;
+  background: #8738DB;
+  color: white;
+  border: none;
+  padding: 18px;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.generate-btn:hover:not(:disabled) {
+  background: #9d5ae6;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(135, 56, 219, 0.3);
+}
+
+.generate-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* --- OUTPUT STYLES --- */
+.output-container {
+  margin-top: 45px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 35px;
+}
+
+.output-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.output-header h3 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.output-box {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 28px;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+  min-height: 160px;
+  white-space: pre-wrap;
+  font-size: 1.05rem;
+}
+
+.copy-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copy-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #8738DB;
+}
+
+/* --- MOBILE RESPONSIVENESS --- */
+@media (max-width: 768px) {
+  .dropdowns {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .paste-card {
+    padding: 30px 20px;
+  }
+  
+  .pill-select {
+    padding: 14px 40px 14px 20px;
+  }
+}

@@ -1,0 +1,144 @@
+/* --- BASE NAVBAR --- */
+.navbar {
+  width: 100%;
+  background-color: #8738DB;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9000;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-left {
+  flex-shrink: 0;
+}
+
+.logo-text {
+  color: #ffffff !important;
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.nav-center {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.upload-btn {
+  background-color: #ffffff;
+  color: #111111;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* --- THE HAMBURGER TOGGLE (The Fix) --- */
+.hamburger-toggle {
+  display: none; /* Hidden on desktop */
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  z-index: 11000; /* HIGHER than the drawer to ensure X is visible */
+  position: relative;
+}
+
+/* --- MOBILE DRAWER --- */
+.mobile-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  background-color: #111111; /* Dark contrast background */
+  z-index: 10000; /* Lower than the toggle button */
+  padding: 100px 40px;
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.drawer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.drawer-content a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.drawer-btn {
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+/* --- RESPONSIVE LOGIC --- */
+@media (max-width: 992px) {
+  .desktop-only {
+    display: none !important;
+  }
+  
+  .hamburger-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    height: 70px;
+  }
+  
+  .nav-container {
+    padding: 0 16px;
+  }
+  
+  .logo-text {
+    font-size: 1.4rem;
+  }
+
+  .mobile-drawer {
+    width: 100%; /* Full screen on small phones */
+  }
+}
