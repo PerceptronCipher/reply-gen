@@ -20,7 +20,7 @@ function Paste({ uploaded }) {
     setError("");
 
     try {
-      const response = await fetch("https://replygen-1.onrender.com/generate", {
+      const response = await fetch("https://api-reply-gen.buildoninc.org/generate", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
