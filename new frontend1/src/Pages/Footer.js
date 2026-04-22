@@ -41,7 +41,7 @@ function Footer() {
       <div className='footer-main'>
         {/* Left Side: Brand & Socials */}
         <div className='footer-left'>
-          <h2 className='footer-brand'>Replix AI</h2>
+          <h2 className='footer-brand'>ReplixAI</h2>
           <div className='social-links'>
             
            <a href='https://x.com/replix_ai?s=21' className='social-icon' aria-label='X (Twitter)'>
