@@ -32,7 +32,7 @@
 
 'use client'
 import React from 'react'
-import { FaLinkedinIn, FaInstagram, FaXTwitter } from 'react-icons/fa6'
+import { FaXTwitter } from 'react-icons/fa6'
 import './Footer.css'
 
 function Footer() {
@@ -43,13 +43,8 @@ function Footer() {
         <div className='footer-left'>
           <h2 className='footer-brand'>ReplyAI</h2>
           <div className='social-links'>
-            <a href='#' className='social-icon' aria-label='LinkedIn'>
-              <FaLinkedinIn size={20} />
-            </a>
-            <a href='#' className='social-icon' aria-label='Instagram'>
-              <FaInstagram size={20} />
-            </a>
-            <a href='#' className='social-icon' aria-label='X (Twitter)'>
+            
+           <a href='https://x.com/replix_ai?s=21' className='social-icon' aria-label='X (Twitter)'>
               <FaXTwitter size={20} />
             </a>
           </div>
