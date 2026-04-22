@@ -72,7 +72,7 @@ function Navbar() {
             className='logo-text'
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           >
-            Reply<span className='logo-accent'>AI</span>
+            Replix<span className='logo-accent'>AI</span>
           </div>
         </div>
 
