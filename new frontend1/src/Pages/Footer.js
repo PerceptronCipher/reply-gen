@@ -44,7 +44,7 @@ function Footer() {
           <h2 className='footer-brand'>Draft</h2>
           <div className='social-links'>
             
-           <a href='https://x.com/replix_ai?s=21' className='social-icon' aria-label='X (Twitter)'>
+           <a href='https://x.com/draft_ttt?s=21' className='social-icon' aria-label='X (Twitter)'>
               <FaXTwitter size={20} />
             </a>
           </div>
